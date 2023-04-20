@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Details of Topic</h1>
+        <table border="2px">
+            <th>Tid</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Date</th>
+            {% for to in TQS %}
+            <tr>
+                <td>{{to.Tid}}</td>
+                <td>{{to.Name}}</td>
+                <td>{{to.Age}}</td>
+                <td>{{to.Email}}</td>
+                <td>{{to.Date}}</td>
+            {% endfor %}
+            </tr>
+        </table>
+    </center>
+    
+</body>
+</html>
